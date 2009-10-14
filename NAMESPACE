@@ -1,0 +1,9 @@
+useDynLib( bcv )
+
+export( cv.svd.gabriel, 
+        cv.svd.wold, 
+        impute.svd, 
+        plot.cvsvd, 
+        print.cvsvd,
+        summary.cvsvd
+      )
