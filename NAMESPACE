@@ -11,3 +11,6 @@ export( cv.svd.gabriel,
 S3method( plot, cvsvd )
 S3method( print, cvsvd )
 S3method( summary, cvsvd )
+
+importFrom("graphics", "lines", "plot", "points", "segments")
+importFrom("stats", "sd")
