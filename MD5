@@ -1,6 +1,6 @@
-ae4feb4146198823febbc0e7fbbb34cd *DESCRIPTION
+338ccd43beef514a58f9aa954da9c4b3 *DESCRIPTION
 dbece7a8d55a7632ac71d04ee333fc65 *LICENSE
-3ad50f70250a385965289533aa4c0f9e *NAMESPACE
+d77cab2c6f110aefca2935d1a074c52e *NAMESPACE
 6319cd83a85f68b5052465f046c35bfc *R/cv.R
 0783f315c7056821669c7d30d31079f9 *R/cv.svd.gabriel.R
 603cb4f220092aac9cb6f1ced40bb85f *R/cv.svd.wold.R
@@ -8,6 +8,9 @@ b2ce9e20e153f007f2745cbb54e9c321 *R/impute.svd.R
 6416dc1c076a1124ba7de2fe9d75be22 *R/plot.R
 0b0e6c83f472ed8fdaec21e8c6828bd4 *R/print.R
 746b73d5d608aac3d970893c2ee5d753 *R/summary.R
+6071edd604dbeb75308cfbedc7790398 *cleanup
+c0e948226a0925a69619e3e23e9931f3 *configure
+d41d8cd98f00b204e9800998ecf8427e *configure.win
 810d4a4c3d857d834340448791910f8b *inst/CITATION
 76b5254e2543317fdafca05fbf90c83e *man/bcv-package.Rd
 aa43b1fa01417e9e86cab8249998b9e2 *man/cv.svd.Rd
@@ -15,10 +18,9 @@ aa43b1fa01417e9e86cab8249998b9e2 *man/cv.svd.Rd
 3118cec68a386b5ef49253d50fbb83e0 *man/plot.cvsvd.Rd
 0ec9c770e59c2278508871b4045aa900 *man/print.cvsvd.Rd
 9b4c3eb8b4e43f75961c57edf3b194ac *man/summary.cvsvd.Rd
-bfcbc2bc773f4958a044f9e96f831f4a *src/Makevars
-72568bd5c4997964e95478cd0fd12ef2 *src/Makevars.win
+3f7b3cff78797b23ef02a03520f181df *src/Makevars.win
 f9246a0c553a92029833b1c7e7340c41 *src/bcv-align-private.h
-530f62ec63db9da383faa45076efbde1 *src/bcv-matrix-private.c
+f5621c5275a5d5a785bff8bd612738e9 *src/bcv-matrix-private.c
 d3fc5e91202aa5c237f030a91c4df58c *src/bcv-matrix-private.h
 162b8dffde2db6fa646ce00301d195ec *src/bcv-partition.c
 0de2aeeaef34b5ebfe99bd03a8a51e8c *src/bcv-partition.h
@@ -26,7 +28,7 @@ dad966ebd369787981389c4d375fbaa2 *src/bcv-svd-gabriel-rep.c
 ccadaca956d147aaf3c8bcedbfd57abb *src/bcv-svd-gabriel-rep.h
 c50c38e347a531635d57043a046b21d2 *src/bcv-svd-gabriel.c
 c8138e2d7fcdf0920c6f1f5cc3177af0 *src/bcv-svd-gabriel.h
-85dc5672423bb2061a79a4d36cf9c37e *src/bcv-svd-impute.c
+052a0a0a359db464f67d4c538006713f *src/bcv-svd-impute.c
 664ac5da2f135f060a74b486ad3641d1 *src/bcv-svd-impute.h
 3058d2caaf6393022732a510db8c7e49 *src/bcv-svd-wold-rep.c
 fb955c74f0d395920d70045692765129 *src/bcv-svd-wold-rep.h
@@ -35,13 +37,13 @@ c616e83adf196ac2fa1ee953f3d17e03 *src/bcv-svd-wold.h
 387782cb74ea210bdbdbd7ce76892914 *src/bcv-types.h
 c60a8e0391c7b21eea81ecf1480b2f00 *src/bcv-vector-private.c
 cb898bf581e1832b6cafd81a3bc732ae *src/bcv-vector-private.h
+a8a1013a704e063890e3a670c6f00b9e *src/bcv_init.c
 75f7e93e07473ae4160c383199d9275d *src/r-cv-svd-gabriel.c
 98f932997d7edae248a21ae809ce9b54 *src/r-cv-svd-gabriel.h
 b5d3040cbbf45e082069cc95201e0d3e *src/r-cv-svd-wold.c
 03c4f8fceb0e3315161596717bf4bd61 *src/r-cv-svd-wold.h
 4a05c36eb29b8be2d9a6d15b553e4f9b *src/r-impute-svd.c
 8adce1d2757e87c9d7175cb89bd056b4 *src/r-impute-svd.h
-878a5fd3ed3f0f053c1ebad4cad9f696 *src/r-init.c
 8e09145dcd825b60415db1c760f1e1fd *tests/cv-svd-gabriel.R
 f9b313d27563a3f3fcb94434dd7a2869 *tests/cv-svd-wold.R
 8500938104390b91c7496bd276ef26d4 *tests/impute-svd.R
