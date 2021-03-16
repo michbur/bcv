@@ -1,4 +1,4 @@
-faad30d553a416cd2d17a20245876e8d *DESCRIPTION
+b61e651b65b515735372d1e37e164c46 *DESCRIPTION
 dbece7a8d55a7632ac71d04ee333fc65 *LICENSE
 d77cab2c6f110aefca2935d1a074c52e *NAMESPACE
 6319cd83a85f68b5052465f046c35bfc *R/cv.R
@@ -8,9 +8,6 @@ b2ce9e20e153f007f2745cbb54e9c321 *R/impute.svd.R
 6416dc1c076a1124ba7de2fe9d75be22 *R/plot.R
 0b0e6c83f472ed8fdaec21e8c6828bd4 *R/print.R
 746b73d5d608aac3d970893c2ee5d753 *R/summary.R
-6071edd604dbeb75308cfbedc7790398 *cleanup
-dea7398dd6bb941312496010d3f7bb80 *configure
-d41d8cd98f00b204e9800998ecf8427e *configure.win
 810d4a4c3d857d834340448791910f8b *inst/CITATION
 76b5254e2543317fdafca05fbf90c83e *man/bcv-package.Rd
 aa43b1fa01417e9e86cab8249998b9e2 *man/cv.svd.Rd
@@ -18,6 +15,7 @@ aa43b1fa01417e9e86cab8249998b9e2 *man/cv.svd.Rd
 3118cec68a386b5ef49253d50fbb83e0 *man/plot.cvsvd.Rd
 0ec9c770e59c2278508871b4045aa900 *man/print.cvsvd.Rd
 9b4c3eb8b4e43f75961c57edf3b194ac *man/summary.cvsvd.Rd
+bfcbc2bc773f4958a044f9e96f831f4a *src/Makevars
 3f7b3cff78797b23ef02a03520f181df *src/Makevars.win
 f9246a0c553a92029833b1c7e7340c41 *src/bcv-align-private.h
 f5621c5275a5d5a785bff8bd612738e9 *src/bcv-matrix-private.c

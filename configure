@@ -1,9 +1,0 @@
-#!/usr/bin/env sh
-
-if [ $(uname) = "Linux" ]
-then
-echo 'PKG_CFLAGS = $(CFLAGS)' > ./src/Makevars
-echo 'PKG_LIBS = $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)' >> ./src/Makevars
-fi
-
-exit 0
