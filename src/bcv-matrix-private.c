@@ -285,7 +285,7 @@ _bcv_blas_dgemv (bcv_matrix_transpose_t transA,
 
     _bcv_dgemv_f77 (_BCV_F77_TRANS (transA), &(a->m), &(a->n),
                     &alpha, a->data, &(a->lda), x->data, &(x->inc),
-                    &beta, y->data, &(y->inc));
+                    &beta, y->data, &(y->inc) FCONE);
 }
 
 
@@ -332,7 +332,7 @@ _bcv_blas_dgemm (bcv_matrix_transpose_t transA,
                     a->data, &(a->lda),
                     b->data, &(b->lda),
                     &beta,
-                    c->data, &(c->lda));
+                    c->data, &(c->lda) FCONE FCONE);
 }
 
 void
@@ -342,7 +342,7 @@ _bcv_lapack_dlacpy (bcv_matrix_uplo_t uplo, const bcv_matrix_t *a,
     _bcv_assert_valid_matrix (a);
     _bcv_assert_valid_matrix (b);
     _bcv_dlacpy_f77 (_BCV_F77_UPLO (uplo), &(b->m), &(b->n),
-                     a->data, &(a->lda), b->data, &(b->lda));
+                     a->data, &(a->lda), b->data, &(b->lda) FCONE);
 }
 
 
@@ -357,7 +357,7 @@ _bcv_lapack_dlange (bcv_matrix_norm_t norm, const bcv_matrix_t *a,
     if (a->m > 0 && a->n > 0)
     {
         result = _bcv_dlange_f77 (_BCV_F77_NORM (norm), &(a->m), &(a->n),
-                                  a->data, &(a->lda), work);
+                                  a->data, &(a->lda), work FCONE);
     }
 
     return result;
@@ -441,7 +441,7 @@ _bcv_lapack_dgesvd (bcv_matrix_svdjob_t jobu, bcv_matrix_svdjob_t jobvt,
 
         _bcv_dgesvd_f77 (_BCV_F77_SVDJOB (jobu), _BCV_F77_SVDJOB (jobvt),
                          &m, &n, a->data, &lda, s, u_data, &ldu, vt_data,
-                         &ldvt, work, &lwork, &info);
+                         &ldvt, work, &lwork, &info FCONE FCONE);
 
         assert (info >= 0);
     }
@@ -470,7 +470,7 @@ _bcv_lapack_dgesvd_work_len (bcv_matrix_svdjob_t jobu,
     {
         _bcv_dgesvd_f77 (_BCV_F77_SVDJOB (jobu), _BCV_F77_SVDJOB (jobvt),
                          &m, &n, NULL, &lda, NULL, NULL, &ldu, NULL, &ldvt,
-                         &work, &lwork, &info);
+                         &work, &lwork, &info FCONE FCONE);
         assert (info == 0);
 
         if (work <= (double) BCV_MAX_INDEX)
@@ -565,7 +565,7 @@ _bcv_lapack_dgesdd (bcv_matrix_svdjob_t jobz,
 
         _bcv_dgesdd_f77 (_BCV_F77_SVDJOB (jobz),
                          &m, &n, a->data, &lda, s, u_data, &ldu, vt_data,
-                         &ldvt, work, &lwork, iwork, &info);
+                         &ldvt, work, &lwork, iwork, &info FCONE);
 
         assert (info >= 0);
     }
@@ -593,7 +593,7 @@ _bcv_lapack_dgesdd_work_len (bcv_matrix_svdjob_t jobz,
     {
         _bcv_dgesdd_f77 (_BCV_F77_SVDJOB (jobz),
                          &m, &n, NULL, &lda, NULL, NULL, &ldu, NULL, &ldvt,
-                         &work, &lwork, NULL, &info);
+                         &work, &lwork, NULL, &info FCONE);
         assert (info == 0);
 
         if (work <= (double) BCV_MAX_INDEX)
@@ -699,7 +699,7 @@ _bcv_lapack_dormbr (bcv_matrix_vect_t vect, bcv_matrix_side_t side,
         _bcv_dormbr_f77 (_BCV_F77_VECT (vect), _BCV_F77_SIDE (side),
                          _BCV_F77_TRANS (trans), &(c->m), &(c->n), &k,
                          a->data, &(a->lda), tau, c->data, &(c->lda),
-                         work, &lwork, &info);
+                         work, &lwork, &info FCONE FCONE FCONE);
         assert (info == 0);
     }
 }
@@ -731,7 +731,7 @@ _bcv_lapack_dormbr_work_len (bcv_matrix_vect_t vect, bcv_matrix_side_t side,
         _bcv_dormbr_f77 (_BCV_F77_VECT (vect), _BCV_F77_SIDE (side),
                          _BCV_F77_TRANS (trans), &mc, &nc, &k,
                          NULL, &lda, NULL, NULL, &ldc,
-                         &work, &lwork, &info);
+                         &work, &lwork, &info FCONE FCONE FCONE);
         assert (info == 0);
 
         if (work <= (double) BCV_MAX_INDEX)
@@ -792,7 +792,7 @@ _bcv_lapack_dbdsqr (bcv_matrix_uplo_t uplo, bcv_index_t n,
 
         _bcv_dbdsqr_f77 (_BCV_F77_UPLO (uplo), &n, &ncvt, &nru, &ncc,
                          d, e, vt_data, &ldvt, u_data, &ldu, c_data, &ldc,
-                         work, &info);
+                         work, &info FCONE);
 
         assert (info >= 0);
     }
