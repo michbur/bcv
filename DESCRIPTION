@@ -1,9 +1,16 @@
 Package: bcv
-Version: 1.0.1.4
+Version: 1.0.1.5
 Date: 2021-03-15
 Title: Cross-Validation for the SVD (Bi-Cross-Validation)
-Author: Patrick O. Perry
-Maintainer: Seyed Morteza Najibi <mor.najibi@gmail.com>
+Authors@R: c(
+    person("Michal", "Burdukiewicz",
+    email = "michalburdukiewicz@gmail.com",
+    comment = c(ORCID = "0000-0001-8926-582X"),
+    role = c("cre", "ctb")),
+    person("Patrick O.", "Perry",
+    role = c("aut", "cph")),
+    person("Seyed Morteza", "Najibi",
+    role = "ctb"))
 Description: 
     Methods for choosing the rank of an SVD approximation via cross
     validation.  The package provides both Gabriel-style "block"
@@ -13,8 +20,8 @@ Description:
     (at <arXiv:0908.2062>) and Perry's 2009 PhD thesis
     (at <arXiv:0909.3052>).
 License: BSD_3_clause + file LICENSE
+URL: https://github.com/michbur/bsv
+BugReports: https://github.com/michbur/bsv/issues
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2021-03-15 09:46:01 UTC; morteza
 Repository: CRAN
-Date/Publication: 2021-03-16 12:40:17 UTC
