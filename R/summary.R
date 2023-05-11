@@ -12,7 +12,7 @@
 #' @param \dots additional arguments to \code{summary}.
 #' @return \item{nfolds }{the number of cross-validation folds} \item{maxrank
 #' }{the maximum rank for which prediction error is estimated.} \item{msep.mean
-#' }{the average mean square error of prediction (MSEP) accross all folds for
+#' }{the average mean square error of prediction (MSEP) across all folds for
 #' ranks 0, 1, ..., \code{maxrank}.} \item{msep.se }{the standard errors of the
 #' \code{msep.mean} estimates.} \item{rank.best }{the rank with the minimum
 #' \code{msep.mean} value.} \item{rank.1se }{the smallest rank within one

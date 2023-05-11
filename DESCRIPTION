@@ -26,3 +26,6 @@ Encoding: UTF-8
 NeedsCompilation: yes
 Repository: CRAN
 RoxygenNote: 7.2.3
+Suggests: 
+    spelling
+Language: en-US

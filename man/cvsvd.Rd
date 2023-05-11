@@ -113,7 +113,7 @@ Owen, A.B. and Perry, P.O. (2009). Bi-cross-validation of the SVD and the
 non-negative matrix factorization.  \emph{Annals of Applied Statistics}
 \bold{3}(2) 564--594.
 
-Wold, S. (1978).  Cross-validitory estimation of the number of components in
+Wold, S. (1978).  Cross-validatory estimation of the number of components in
 factor and principal components models.  \emph{Technometrics} \bold{20}(4)
 397--405.
 }
