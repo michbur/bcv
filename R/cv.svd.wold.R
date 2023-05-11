@@ -1,4 +1,3 @@
-
 cv.svd.wold.check <- function( cv.svd ) {
     function( x, k=5, maxrank=20, tol=1e-4, maxiter=20 ) {
         x <- as.matrix( x )
@@ -63,4 +62,6 @@ cv.svd.wold.C.unchecked <- function( x, k, maxrank, tol, maxiter, sets ) {
 }
 cv.svd.wold.C <- cv.svd.wold.check( cv.svd.wold.C.unchecked )
 
+#' @rdname cvsvd
+#' @export
 cv.svd.wold <- cv.svd.wold.C

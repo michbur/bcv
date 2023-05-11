@@ -1,4 +1,20 @@
-
+#' Print the Result of an SVD Cross-Validation
+#' 
+#' Print the result of \code{\link{cv.svd.gabriel}} or
+#' \code{\link{cv.svd.wold}}.
+#' 
+#' Print a table of the estimated prediction errors and the standard errors of
+#' the estimate.  Put an asterisk (\code{*}) next to the minimum and a plus
+#' (\code{+}) next to the "one standard error rule" choice.
+#' 
+#' @param x the result of a \code{\link{cv.svd.gabriel}} or
+#' \code{\link{cv.svd.wold}} computation.
+#' @param digits the digits of precision to show in the output.
+#' @param \dots additional arguments to \code{print}.
+#' @author Patrick O. Perry
+#' @seealso \code{\link{cv.svd.gabriel}}, \code{\link{cv.svd.wold}},
+#' \code{\link{plot.cvsvd}} \code{\link{summary.cvsvd}}
+#' @export
 print.cvsvd <- function( x, digits=max(3, getOption("digits") - 3), ... ) {
     cat( "\nCall:\n", deparse( x$call ), "\n\n", sep = "" )
     

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/404.html</loc>
+  </url>
+  <url>
+    <loc>/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>/authors.html</loc>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/bcv-package.html</loc>
+  </url>
+  <url>
+    <loc>/reference/cvsvd.html</loc>
+  </url>
+  <url>
+    <loc>/reference/impute.svd.html</loc>
+  </url>
+  <url>
+    <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/plot.cvsvd.html</loc>
+  </url>
+  <url>
+    <loc>/reference/print.cvsvd.html</loc>
+  </url>
+  <url>
+    <loc>/reference/summary.cvsvd.html</loc>
+  </url>
+</urlset>

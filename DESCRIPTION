@@ -25,3 +25,4 @@ BugReports: https://github.com/michbur/bsv/issues
 Encoding: UTF-8
 NeedsCompilation: yes
 Repository: CRAN
+RoxygenNote: 7.2.3
