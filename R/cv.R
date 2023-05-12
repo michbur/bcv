@@ -1,6 +1,5 @@
 
-
-round.fold <- function( n, k ) {
+round_fold <- function( n, k ) {
     if (n <= 1)
         stop( "n should be greater than 1" )
     
@@ -12,7 +11,7 @@ round.fold <- function( n, k ) {
     k
 }
 
-choose.sets <- function( n, k ) {
+choose_sets <- function( n, k ) {
     if (k < 1)
         stop( "k should be positive" )
     if (k > n)
@@ -23,7 +22,7 @@ choose.sets <- function( n, k ) {
     n.s <- table( s )
 
     if ( length( n.s ) != k )
-        choose.sets(n,k)
+      choose_sets(n,k)
     else
         s
 }

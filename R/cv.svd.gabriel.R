@@ -110,16 +110,16 @@ cv.svd.gabriel <- function(x, krow=2, kcol=2,
     if (maxrank < 0)
         stop("maxrank should be non-negative")
     
-    krow.o <- krow; krow <- round.fold(n, krow);
-    kcol.o <- kcol; kcol <- round.fold(p, kcol);
+    krow.o <- krow; krow <- round_fold(n, krow);
+    kcol.o <- kcol; kcol <- round_fold(p, kcol);
     
     if (krow != krow.o) 
         warning("krow has been set to ", krow)
     if (kcol != kcol.o)
         warning("kcol has been set to ", kcol)
     
-    s.r <- choose.sets(n, krow)
-    s.c <- choose.sets(p, kcol)
+    s.r <- choose_sets(n, krow)
+    s.c <- choose_sets(p, kcol)
 
     n0 <- n - max( table( s.r ) )
     p0 <- p - max( table( s.c ) )

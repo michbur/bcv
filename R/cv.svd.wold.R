@@ -15,11 +15,11 @@ cv.svd.wold.check <- function( cv.svd ) {
     
         storage.mode( x ) <- "double"
     
-        k.o <- k; k <- round.fold( n*p, k );
+        k.o <- k; k <- round_fold( n*p, k );
         if (k != k.o) 
             warning("k has been set to ", k)
     
-        sets  <- choose.sets( n*p, k )
+        sets  <- choose_sets( n*p, k )
         
         msep <- cv.svd( x, k, maxrank, tol, maxiter, sets )
         colnames( msep ) <- 0:maxrank
