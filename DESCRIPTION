@@ -1,6 +1,6 @@
 Package: bcv
-Version: 1.0.1.5
-Date: 2021-03-15
+Version: 1.0.2
+Date: 2023-05-11
 Title: Cross-Validation for the SVD (Bi-Cross-Validation)
 Authors@R: c(
     person("Michal", "Burdukiewicz",
@@ -20,8 +20,8 @@ Description:
     (at <arXiv:0908.2062>) and Perry's 2009 PhD thesis
     (at <arXiv:0909.3052>).
 License: BSD_3_clause + file LICENSE
-URL: https://github.com/michbur/bsv
-BugReports: https://github.com/michbur/bsv/issues
+URL: https://github.com/michbur/bcv
+BugReports: https://github.com/michbur/bcv/issues
 Encoding: UTF-8
 NeedsCompilation: yes
 Repository: CRAN

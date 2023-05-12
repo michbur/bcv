@@ -1,4 +1,5 @@
-Changes from Version 1.0.1.4 to 1.0.1.5
+Changes from Version 1.0.1.4 to 1.0.2
 * added fortran macros to adapt the package for LAPACKII
+* changed versioning to three-component (as per CRAN requirements)
 * Michal Burdukiewicz <michalburdukiewicz@gmail.com> becomes a new maintainer of the package. Thanks to 
 Seyed Morteza Najibi for maintaining and Patrick O. Perry for developing the package.

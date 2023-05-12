@@ -6,13 +6,14 @@ citHeader( "To cite package ’bcv’ in publications use:" )
 year <- sub( ".*(2[[:digit:]]{3})-.*", "\\1", meta$Date )
 vers <- paste( "R package version", meta$Version )
 
-citEntry( entry="Manual", 
-          title="bcv: Cross-Validation for the SVD (Bi-Cross-Validation)",
-         author=personList( as.person( "Patrick O. Perry" ) ),
+bibentry(bibtype="Manual", 
+          title="bcv: Cross-Validation for the SVD (Bi-Cross-Validation). ",
+         author=c(as.person("Patrick O. Perry"), 
+                  as.person("Seyed Mortez Najibi"), 
+                  as.person("Michal Burdukiewicz")),
            year=year, 
            note=vers, 
-    textVersion=paste( "Patrick O. Perry, ",
+    textVersion=paste0("Patrick O. Perry, Seyed Mortez Najibi, Michal Burdukiewicz, ",
                        "(", year, "). ",
                        "bcv: Cross-Validation for the SVD (Bi-Cross-Validation). ",
-                       vers, ".", 
-                       sep="" ) ) 
+                       vers, "."))
