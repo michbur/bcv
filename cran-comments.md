@@ -37,3 +37,7 @@ RHub return two notes which seem to be false positives (as per https://github.co
 >    function(n, k)
 
 round.fold was not a method and its name was changed to round_fold.
+
+### warning: function declaration isn't a prototype
+
+Fixed all functions, tested by check_win_devel().
