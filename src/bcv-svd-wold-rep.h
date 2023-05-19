@@ -43,7 +43,7 @@ bcv_svd_wrep_size (bcv_index_t M, bcv_index_t N);
  * Return the alignment of a #bcv_svd_wrep_t.
  */
 size_t
-bcv_svd_wrep_align ();
+bcv_svd_wrep_align (void);
 
 /**
  * bcv_svd_wrep_free:

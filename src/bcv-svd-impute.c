@@ -135,7 +135,7 @@ bcv_svd_impute_size (bcv_index_t m, bcv_index_t n)
 
 
 size_t
-bcv_svd_impute_align ()
+bcv_svd_impute_align (void)
 {
     return _bcv_alignof (bcv_svd_impute_t);
 }

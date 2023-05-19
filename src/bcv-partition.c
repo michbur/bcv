@@ -37,7 +37,7 @@ bcv_partition_size (bcv_index_t n)
 
 
 size_t
-bcv_partition_align ()
+bcv_partition_align (void)
 {
     return _bcv_alignof (bcv_partition_t);
 }

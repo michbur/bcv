@@ -63,7 +63,7 @@ bcv_svd_wrep_size (bcv_index_t M, bcv_index_t N)
 
 
 size_t
-bcv_svd_wrep_align ()
+bcv_svd_wrep_align (void)
 {
     size_t result = _bcv_alignof (bcv_svd_wrep_t);
     

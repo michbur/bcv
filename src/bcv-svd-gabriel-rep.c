@@ -90,7 +90,7 @@ bcv_svd_grep_size (bcv_gabriel_holdin_t holdin, bcv_index_t M, bcv_index_t N)
 
 
 size_t
-bcv_svd_grep_align ()
+bcv_svd_grep_align (void)
 {
     return _bcv_alignof (bcv_svd_grep_t);
 }

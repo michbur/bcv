@@ -54,7 +54,7 @@ bcv_svd_gabriel_size (bcv_gabriel_holdin_t max_holdin, bcv_index_t M,
 
 
 size_t
-bcv_svd_gabriel_align ()
+bcv_svd_gabriel_align (void)
 {
     return _bcv_alignof (bcv_svd_gabriel_t);
 }

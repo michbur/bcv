@@ -52,7 +52,7 @@ bcv_partition_size (bcv_index_t n);
  * Return the alignment of a #bcv_partition_t.
  */
 size_t
-bcv_partition_align ();
+bcv_partition_align (void);
 
 /**
  * bcv_partition_free:

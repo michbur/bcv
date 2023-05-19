@@ -69,7 +69,7 @@ bcv_svd_gabriel_size (bcv_gabriel_holdin_t max_holdin, bcv_index_t M,
  * Return the alignment of a bcv_svd_gabriel_t.
  */
 size_t
-bcv_svd_gabriel_align ();
+bcv_svd_gabriel_align (void);
 
 /**
  * bcv_svd_gabriel_init:

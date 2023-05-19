@@ -50,7 +50,7 @@ bcv_svd_impute_size (bcv_index_t m, bcv_index_t n);
  * Return the alignment of an SVDImpute workspace.
  */
 size_t
-bcv_svd_impute_align ();
+bcv_svd_impute_align (void);
 
 /**
  * bcv_svd_impute_init:

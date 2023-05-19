@@ -57,7 +57,7 @@ bcv_svd_wold_size (bcv_index_t max_holdout, bcv_index_t M, bcv_index_t N)
 }
 
 size_t
-bcv_svd_wold_align ()
+bcv_svd_wold_align (void)
 {
     size_t result = _bcv_alignof (bcv_svd_wold_t);
     
