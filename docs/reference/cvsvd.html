@@ -18,7 +18,7 @@ appropriate rank SVD approximation of a matrix."><!-- mathjax --><script src="ht
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">bcv</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0.1.5</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0.2</span>
       </span>
     </div>
 
@@ -27,7 +27,7 @@ appropriate rank SVD approximation of a matrix."><!-- mathjax --><script src="ht
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul><ul class="nav navbar-nav navbar-right"><li>
-  <a href="https://github.com/michbur/bsv/" class="external-link">
+  <a href="https://github.com/michbur/bcv/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -42,7 +42,7 @@ appropriate rank SVD approximation of a matrix."><!-- mathjax --><script src="ht
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Cross-Validation for choosing the rank of an SVD approximation.</h1>
-    <small class="dont-index">Source: <a href="https://github.com/michbur/bsv/blob/HEAD/R/cv.svd.gabriel.R" class="external-link"><code>R/cv.svd.gabriel.R</code></a>, <a href="https://github.com/michbur/bsv/blob/HEAD/R/cv.svd.wold.R" class="external-link"><code>R/cv.svd.wold.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/michbur/bcv/blob/HEAD/R/cv.svd.gabriel.R" class="external-link"><code>R/cv.svd.gabriel.R</code></a>, <a href="https://github.com/michbur/bcv/blob/HEAD/R/cv.svd.wold.R" class="external-link"><code>R/cv.svd.wold.R</code></a></small>
     <div class="hidden name"><code>cvsvd.Rd</code></div>
     </div>
 
@@ -170,7 +170,7 @@ B.</p>
 <p>Owen, A.B. and Perry, P.O. (2009). Bi-cross-validation of the SVD and the
 non-negative matrix factorization.  <em>Annals of Applied Statistics</em>
 <b>3</b>(2) 564--594.</p>
-<p>Wold, S. (1978).  Cross-validitory estimation of the number of components in
+<p>Wold, S. (1978).  Cross-validatory estimation of the number of components in
 factor and principal components models.  <em>Technometrics</em> <b>20</b>(4)
 397--405.</p>
     </div>
@@ -202,17 +202,17 @@ factor and principal components models.  <em>Technometrics</em> <b>20</b>(4)
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Rank   MSEP       SE</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  ---------------------</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      0  3.121  0.16323</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      1  2.186  0.09454</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      2  1.231  0.03501 *+ </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      3  1.765  0.12850</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      4  1.998  0.17387</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      5  2.494  0.19452</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      6  2.873  0.14919</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      7  3.415  0.08560</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      8  3.630  0.05626</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      9  3.931  0.17356</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     10  4.001  0.21211</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      0  3.530  0.21488</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      1  2.106  0.13234</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      2  1.155  0.03828 *+ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      3  1.327  0.05629</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      4  1.498  0.03542</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      5  1.810  0.04147</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      6  2.308  0.09188</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      7  2.859  0.19142</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      8  3.257  0.10228</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      9  3.599  0.13906</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     10  3.861  0.16854</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span>  </span></span>
 <span class="r-in"><span>  <span class="co"># perform (2,2)-fold Gabriel-style cross-validation</span></span></span>
@@ -223,17 +223,17 @@ factor and principal components models.  <em>Technometrics</em> <b>20</b>(4)
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Rank   MSEP       SE</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  ---------------------</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      0  3.121  0.22699</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      1  2.329  0.11224</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      2  1.264  0.09082 *+ </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      3  1.289  0.08803</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      4  1.309  0.06850</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      5  1.360  0.06046</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      6  1.381  0.05714</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      7  1.461  0.05816</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      8  1.556  0.05156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      9  1.756  0.07665</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     10  1.866  0.06537</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      0  3.530  0.34342</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      1  2.280  0.18648</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      2  1.187  0.09107 *+ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      3  1.249  0.08893</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      4  1.272  0.09686</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      5  1.317  0.10927</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      6  1.358  0.10515</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      7  1.435  0.11957</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      8  1.541  0.06046</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      9  1.664  0.07708</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     10  2.005  0.05796</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
